@@ -1,0 +1,8 @@
+{% extends "core/base.html" %}
+{% block title %}Выход — DjangoMart{% endblock %}
+
+{% block content %}
+  <div class="alert alert-info">Вы вышли из аккаунта.</div>
+  <a class="btn btn-primary" href="{% url 'login' %}">Войти снова</a>
+  <a class="btn btn-link" href="{% url 'home' %}">На главную</a>
+{% endblock %}

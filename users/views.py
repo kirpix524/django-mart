@@ -8,8 +8,8 @@ User = get_user_model()
 class SignUpView(CreateView):
     model = User
     form_class = UserCreateForm
-    template_name = "registration/signup.html"
+    template_name = "users/signup.html"
     success_url = reverse_lazy("login")
 
 class ProfileView(TemplateView):
-    template_name = "profile.html"
+    template_name = "users/profile.html"
